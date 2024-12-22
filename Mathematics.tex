@@ -1,0 +1,17 @@
+\documentclass{book}
+\input{source/packages}
+\input{source/environments}
+\input{source/domains/logic}
+\input{source/domains/mathematics}
+\input{source/domains/set theory}
+\input{source/domains/utilities}
+\input{document/cover}
+\begin{document}
+\maketitle
+\tableofcontents
+	\part{Logic}
+		\chapter{Sentential logic}
+			\section{Arguments}
+			\include*{document/logic/sentential_logic/arguments/definitions}
+			\include*{document/logic/sentential_logic/arguments/properties}
+\end{document}

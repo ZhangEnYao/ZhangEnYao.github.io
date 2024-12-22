@@ -1,0 +1,28 @@
+% Mark
+\NewDocumentCommand{\Keywords}{ m }{%
+	\textcolor{black}{\emph{#1}}%
+}
+% Structure
+\NewDocumentCommand{\Domain}{ m }{%
+	\textbf{#1}%
+}
+\NewDocumentCommand{\List}{ m m }{%
+	\begin{#1}
+	{#2}
+	\end{#1}%
+}
+% Instance
+\NewDocumentCommand{\ExempliGratia}{ m }{%
+	e.g., {#1}%
+}
+\NewDocumentCommand{\Instance}{ m m }{%
+	\begin{instance}\textbf{\emph{#1}}\\%
+	\normalfont{#2}%
+	\end{instance}%
+}
+\NewDocumentCommand{\Notion}{ m m }{%
+	\begin{notion}%
+	{#1}\\
+	{#2}
+	\end{notion}%
+}

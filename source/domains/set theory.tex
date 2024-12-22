@@ -1,0 +1,26 @@
+\DeclareMathOperator{\identityrelation}{Id}
+\DeclareMathOperator{\domain}{dom}
+\DeclareMathOperator{\range}{ran}
+\DeclareMathOperator{\field}{field}
+\DeclareMathOperator{\symmetricdifference}{\triangle}
+\DeclareMathOperator{\cartesianproduct}{\times}
+\DeclareMathOperator{\composition}{\circ}
+
+\NewDocumentCommand{\SetComprehension}{ m m }{%
+	\{\thinspace{#1}\ \vert\ {#2}\thinspace\}%
+}
+\NewDocumentCommand{\FunctionComprehension}{ m m }{%
+	\langle \thinspace{#1}\ \vert\ {#2}\thinspace \rangle%
+}
+\NewDocumentCommand{\QuantifierCondition}{ m m m }{%
+	{#1}\thinspace{#2}\thinspace\big({#3})%
+}
+\NewDocumentCommand{\Set}{ m }{%
+	\{{#1}\}%
+}
+\NewDocumentCommand{\Inverse}{ m }{%
+	{#1}^{-1}%
+}
+\NewDocumentCommand{\Powerset}{ m }{%
+	\mathcal{P}({#1})%
+}

@@ -1,0 +1,14 @@
+*
+
+!/.gitignore
+
+!makefile
+!Mathematics.tex
+!source/
+!source/**
+!document/
+!document/**
+
+!script.py
+!scripts/
+!scripts/**

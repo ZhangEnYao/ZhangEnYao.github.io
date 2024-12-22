@@ -1,0 +1,17 @@
+\NewDocumentCommand{\LogicProof}{ m }{%
+	\begin{tabular}{ l l l }%
+	#1%
+	\end{tabular}\\%
+}
+\NewDocumentCommand{\LogicProofStatement}{ m m m }{%
+	{#1}&{#2}&{#3}\\%
+}
+\newcommand{\ConditionalProofArrow}[3][]{%
+  	\tikz[remember picture, baseline=({#2}.base)]%
+    	\node[minimum size=0pt,inner sep=0pt, {#1}]({#2}){{#3}};%
+}
+\NewDocumentCommand{\ConditionalProofArrowImplement}{ m m m }{%
+    \begin{tikzpicture}[remember picture, overlay]%
+        \draw[stealth-] ({#1}) -- ++(-{#3},0) |- ({#2}.north east);%
+    \end{tikzpicture}%
+}
