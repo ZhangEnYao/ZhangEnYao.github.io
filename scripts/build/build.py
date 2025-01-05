@@ -2,7 +2,7 @@ import pathlib
 
 from ..configuration import SOURCE, MATHEMATICS, COVER, DOCUMENT
 from ..infrastructure.system import File
-from .domain import Title, Description
+from .domain import Title
 
 
 

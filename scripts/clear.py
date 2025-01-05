@@ -2,7 +2,7 @@ import os
 import pathlib
 import shutil
 
-from .configuration import CATCH, SCRIPTS, MATHEMATICS, TEMPORARY
+from .configuration import MATHEMATICS, TEMPORARY
 
 
 

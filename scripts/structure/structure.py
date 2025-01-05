@@ -51,7 +51,7 @@ class Graphs:
     @functools.cached_property
     def graphs(self) -> tuple[Graph]:
         return tuple(self.generator.generate())
-    
+
     def query(self, nodes: set[str], threshold: float = 1) -> tuple[Graph]:
         if nodes:
             nodes = set(node.capitalize() for node in nodes)
